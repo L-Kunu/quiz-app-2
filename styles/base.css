@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9c9bd;
+}
+
+h1 {
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
