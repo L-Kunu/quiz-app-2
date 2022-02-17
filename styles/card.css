@@ -9,13 +9,13 @@
 .card__title {
   padding: 10px 40px;
   margin-top: 1rem 2rem 0.5rem 2rem;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   font-size: 2rem;
   font-weight: 500;
 }
 
 .card__question {
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   margin: 2rem;
   margin-top: 0.5rem;
   display: flex;
