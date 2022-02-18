@@ -1,28 +1,49 @@
 .card {
-  border: 2px solid #eb8f49;
-  margin: 30px;
+  border: 2px solid #49a078;
+  border-radius: 10px;
+  margin: 50px 10px;
+  width: 100vl;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .card__title {
-  padding: 10px 40px;
-  margin-top: 1rem 2rem 0.5rem 2rem;
+  padding: 15px 20px;
   font-family: 'Source Code Pro', monospace;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .card__question {
   font-family: 'Source Code Pro', monospace;
-  margin: 2rem;
-  margin-top: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin: 0.5rem 1rem;
+  display: inherit;
+  justify-content: center;
+}
+
+.card__answers {
+  padding: 5px;
+  margin-top: 30px;
+  list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card__answer-button {
-  display: flex;
-  align-self: center;
+  margin: 10px;
+  padding: 20px;
+  color: #dce1de;
+  background: linear-gradient(40deg, #1f2421, #216869, #49a078, #9cc5a1);
+  border: #49a078 solid 1px;
+  border-radius: 10px;
+  width: 85vw;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
