@@ -3,11 +3,9 @@
 function wrongAnswers() {
   const wrongAnswer = document.querySelector('[data-js="incorrect"]');
 
-    wrongAnswer.addEventListener('click', () => {
-      wrongAnswer.classList.add('card__answer-button--incorrect');
-    });
+  wrongAnswer.addEventListener('click', () => {
+    wrongAnswer.classList.add('card__answer-button--incorrect');
   });
-
 }
 
 export default wrongAnswers;
