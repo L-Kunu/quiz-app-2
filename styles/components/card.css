@@ -35,7 +35,7 @@
 
 .card__answer-button {
   margin: 10px;
-  padding: 20px;
+  padding: 20px 40px;
   color: #dce1de;
   background: linear-gradient(40deg, #1f2421, #216869, #49a078, #9cc5a1);
   border: #49a078 solid 1px;

@@ -6,102 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
     <script defer src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/da095dbbc0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Merle's Awesome Crypto-Quiz</title>
   </head>
 
   <body>
-    <h1>The Crypto Quiz</h1>
+    <h1 class="home__header">The Crypto Quiz</h1>
 
-    <section class="card">
+    <section class="card" data-js="Q1">
       <h2 class="card__title">Question:</h2>
       <p class="card__question">What is "crypto"?</p>
-      <ul class="card__answers">
+      <ul role="list" class="card__answers">
         <li>
           <button type="button" class="card__answer-button">
             a new type of digital money
           </button>
         </li>
         <li>
-          <button type="submit" class="card__answer-button">
+          <button type="button" class="card__answer-button">
             some scammers on the internet trying to make money
           </button>
         </li>
         <li>
-          <button type="submit" class="card__answer-button">
+          <button type="button" class="card__answer-button">
             a new decentralized internet
           </button>
         </li>
         <li>
-          <button type="submit" class="card__answer-button">
+          <button type="button" class="card__answer-button">
             the blockchain
           </button>
         </li>
       </ul>
     </section>
 
-    <section class="card hidden">
+    <section class="card hidden" data-js="Q2">
       <h2 class="card__title">Question:</h2>
       <p class="card__question">
         How is the biggest protocol in the crypto space called?
       </p>
-      <ul>
+      <ul role="list" class="card__answers">
         <li>
-          <button type="submit" class="card__answer-button">Answer 1</button>
+          <button type="button" class="card__answer-button">Bitcoin</button>
         </li>
         <li>
-          <button type="submit" class="card__answer-button">Answer 2</button>
+          <button type="button" class="card__answer-button">Ethereum</button>
         </li>
         <li>
-          <button type="submit" class="card__answer-button">Answer 3</button>
-        </li>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 4</button>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card hidden">
-      <h2 class="card__title">Question:</h2>
-      <p class="card__question">What is the utility of Bitcoin?</p>
-      <ul>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 1</button>
-        </li>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 2</button>
-        </li>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 3</button>
-        </li>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 4</button>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card hidden">
-      <h2 class="card__title">Question:</h2>
-      <p class="card__question">What is an NFT?</p>
-      <ul>
-        <li>
-          <button type="submit" class="card__answer-button" card__answer-button>
-            Answer 1
+          <button type="button" class="card__answer-button">
+            the Blockchain
           </button>
         </li>
         <li>
-          <button type="submit" class="card__answer-button">Answer 2</button>
-        </li>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 3</button>
-        </li>
-        <li>
-          <button type="submit" class="card__answer-button">Answer 4</button>
+          <button type="button" class="card__answer-button">Hyperledger</button>
         </li>
       </ul>
     </section>
 
-    <footer>
-      <nav></nav>
-    </footer>
+    <section class="card hidden" data-js="Q3">
+      <h2 class="card__title">Question:</h2>
+      <p class="card__question">What is the utility of Bitcoin?</p>
+      <ul role="list" class="card__answers">
+        <li>
+          <button type="button" class="card__answer-button">
+            Storage of value, it will function like digital gold
+          </button>
+        </li>
+        <li>
+          <button type="button" class="card__answer-button">
+            It will replace money in the future
+          </button>
+        </li>
+        <li>
+          <button type="button" class="card__answer-button">
+            It's a plattform to build apps on
+          </button>
+        </li>
+        <li>
+          <button type="button" class="card__answer-button">
+            Storage of sensitive data
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card hidden" data-js="Q4">
+      <h2 class="card__title">Question:</h2>
+      <p class="card__question">What is an NFT?</p>
+      <ul role="list" class="card__answers">
+        <li>
+          <button type="button" class="card__answer-button">
+            An overpriced jpg
+          </button>
+        </li>
+        <li>
+          <button type="button" class="card__answer-button">
+            a Non Functional Token
+          </button>
+        </li>
+        <li>
+          <button type="button" class="card__answer-button">
+            Any unit of data, which is tied to a smartcontract and stored on the
+            blockchain
+          </button>
+        </li>
+        <li>
+          <button type="button" class="card__answer-button"></button>
+        </li>
+      </ul>
+    </section>
+
+    <nav>
+      <ul role="list" class="navigation">
+        <li>
+          <button
+            type="button"
+            class="navigation__button navigation__home"
+            aria-label="go to Home"
+          >
+            Home
+          </button>
+        </li>
+
+        <li>
+          <button
+            type="button"
+            class="navigation__button navigation__bookmarks"
+            aria-label="go to Bookmarks"
+          >
+            <i class="fa-light fa-bookmark"></i>
+          </button>
+        </li>
+
+        <li>
+          <button
+            type="button"
+            class="navigation__button navigation__create"
+            aria-label="create your own question"
+          >
+            Create
+          </button>
+        </li>
+
+        <li>
+          <button
+            type="button"
+            class="navigation__button navigation__profile"
+            aria-label="go to Profile"
+          >
+            Profile
+          </button>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
