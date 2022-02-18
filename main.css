@@ -1,5 +1,6 @@
 @import './styles/base.css';
 @import './styles/components/card.css';
 @import './styles/components/navigation.css';
+@import './styles/components/answers.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Source+Code+Pro:wght@200;400;700&family=VT323&display=swap');

@@ -1,0 +1,7 @@
+.card__answer-button--correct {
+}
+
+.card__answer-button--incorrect {
+  border: red solid 1px;
+  color: red;
+}

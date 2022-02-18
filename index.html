@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
-    <script defer src="./index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/da095dbbc0.js"
-      crossorigin="anonymous"
-    ></script>
+    <script defer src="./index.js" type="modules"></script>
     <title>Merle's Awesome Crypto-Quiz</title>
   </head>
 
@@ -21,23 +17,23 @@
       <p class="card__question">What is "crypto"?</p>
       <ul role="list" class="card__answers">
         <li>
-          <button type="button" class="card__answer-button">
+          <button type="button" class="card__answer-button" data-js="incorrect">
             a new type of digital money
           </button>
         </li>
         <li>
-          <button type="button" class="card__answer-button">
+          <button type="button" class="card__answer-button" data-js="incorrect">
             some scammers on the internet trying to make money
           </button>
         </li>
         <li>
-          <button type="button" class="card__answer-button">
+          <button type="button" class="card__answer-button" data-js="correct">
             a new decentralized internet
           </button>
         </li>
         <li>
-          <button type="button" class="card__answer-button">
-            the blockchain
+          <button type="button" class="card__answer-button" data-js="incorrect">
+            a blockchain
           </button>
         </li>
       </ul>
@@ -137,7 +133,7 @@
             class="navigation__button navigation__bookmarks"
             aria-label="go to Bookmarks"
           >
-            <i class="fa-light fa-bookmark"></i>
+            Bookmarks
           </button>
         </li>
 
