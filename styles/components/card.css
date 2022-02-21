@@ -44,6 +44,6 @@
   cursor: pointer;
 }
 
-.hidden {
+.card__hidden {
   display: none;
 }

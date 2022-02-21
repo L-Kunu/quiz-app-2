@@ -1,6 +1,7 @@
 .navigation {
   list-style: none;
   position: fixed;
+  bottom: 0;
   width: 100vw;
   display: flex;
   flex-direction: row;

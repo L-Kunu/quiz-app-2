@@ -7,9 +7,6 @@
 body {
   background-color: #1f2421;
   color: #9cc5a1;
-  display: grid;
-  grid-template-rows: 60px auto 60px;
-  height: 100vh;
 }
 
 .home__header {
@@ -18,4 +15,12 @@ body {
   font-size: 3rem;
   text-align: center;
   padding-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
 }
