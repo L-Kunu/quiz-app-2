@@ -5,3 +5,24 @@
   border: red solid 1px;
   color: red;
 }
+
+.answer__card {
+  border: 2px solid #49a078;
+  border-radius: 10px;
+  margin: 50px 10px;
+  width: 100vl;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card__title {
+  padding: 15px 20px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card__hidden {
+  display: none;
+}
