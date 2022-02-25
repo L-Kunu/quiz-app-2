@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
-    <script defer src="./index.js" type="module"></script>
+    <script type="module" defer src="./index.js"></script>
     <title>Merle's Awesome Crypto-Quiz</title>
   </head>
 
@@ -21,7 +21,7 @@
             <button
               type="button"
               class="card__answer-button"
-              data-js="incorrect"
+              data-answer="incorrect"
             >
               a new type of digital money
             </button>
@@ -30,13 +30,17 @@
             <button
               type="button"
               class="card__answer-button"
-              data-js="incorrect"
+              data-answer="incorrect"
             >
               some scammers on the internet trying to make money
             </button>
           </li>
           <li>
-            <button type="button" class="card__answer-button" data-js="correct">
+            <button
+              type="button"
+              class="card__answer-button"
+              data-answer="correct"
+            >
               a new decentralized internet
             </button>
           </li>
@@ -44,7 +48,7 @@
             <button
               type="button"
               class="card__answer-button"
-              data-js="incorrect"
+              data-answer="incorrect"
             >
               a blockchain
             </button>
@@ -52,9 +56,20 @@
         </ul>
       </section>
 
-      <section class="answer__card">
-        <h2 class="card__title">Answer:</h2>
-        <p class="card__text">"Crypto" is also called "web 3"</p>
+      <section class="answer__card answer__hidden">
+        <h2 class="answer__card-title">Answer:</h2>
+        <p class="answer__card-text">
+          "Crypto" is the name of a new development in the internet economy,
+          which is based on blockchain technology.
+          <span>It is also called web3.</span>
+          <span
+            >The companies, projects and protocols in the web3 / crypto space
+            are especially focused on decentralization.</span
+          >
+        </p>
+        <button type="button" class="card__answer-button" data-js="incorrect">
+          Got it!
+        </button>
       </section>
 
       <section class="card card__hidden" data-js="Q2">
@@ -152,7 +167,7 @@
             <input type="checkbox" />
             Add the first option</label
           >
-          <textarea name="answer" id="answer" cols="30" rows="1"></textarea>
+          <textarea name="answer" id="answer" cols="30" rows="2"></textarea>
           <label for="answer">
             <input type="checkbox" />
             Add the second option</label
@@ -193,8 +208,8 @@
         </p>
         <label for="profile__tags" class="profile__skills">Skills</label>
         <ul role="list" class="profile__tags-list">
-          <li class="profile__tags-item">Solidity</li>
           <li class="profile__tags-item">Smart Contracts</li>
+          <li class="profile__tags-item">Solidity</li>
           <li class="profile__tags-item">NFTs</li>
         </ul>
         <button class="profile__logout">Log out</button>

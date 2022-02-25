@@ -18,3 +18,8 @@
   cursor: pointer;
   padding: 15px 20px;
 }
+
+.navigation__highlighted {
+  border: 1px solid #49a078;
+  padding: 14px 19px;
+}

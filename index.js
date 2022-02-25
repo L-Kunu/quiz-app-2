@@ -1,5 +1,5 @@
-import navigation from './js/navigation';
-import answers from './js/answers';
+import navigation from './js/navigation.js';
+import answer from './js/answers.js';
 
 navigation();
-answers();
+answer();

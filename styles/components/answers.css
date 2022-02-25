@@ -1,4 +1,6 @@
 .card__answer-button--correct {
+  border: greenyellow solid 1px;
+  color: greenyellow;
 }
 
 .card__answer-button--incorrect {
@@ -16,13 +18,26 @@
   flex-wrap: wrap;
 }
 
-.card__title {
+.answer__card-title {
   padding: 15px 20px;
   font-family: 'Source Code Pro', monospace;
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-.card__hidden {
+.answer__card-text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  margin: 20px;
+  padding: 20px 40px;
+  color: #dce1de;
+  background: linear-gradient(40deg, #1f2421, #216869, #49a078, #9cc5a1);
+  border: #49a078 solid 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.answer__hidden {
   display: none;
 }

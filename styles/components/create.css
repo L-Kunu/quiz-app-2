@@ -3,15 +3,16 @@
   font-size: 1rem;
   border: 1px solid #49a078;
   border-radius: 10px;
-  background-color: #216869;
+  background-color: #1f2421;
   margin: 10px 10px;
   width: 100;
   height: 100;
 }
 
 textarea {
-  background-color: #dce1de;
+  background: linear-gradient(40deg, #1f2421, #216869, #49a078, #9cc5a1);
   border-radius: 6px;
+  color: #dce1de;
 }
 
 .create__info {
@@ -27,11 +28,12 @@ textarea {
 }
 
 .create__form--submit {
+  font-family: 'Source Code Pro', monospace;
   margin: 3px auto;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 5px;
   width: 150px;
   border-radius: 6px;
   background-color: #9cc5a1;
-  color: #216869;
+  color: #1f2421;
 }

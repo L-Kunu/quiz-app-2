@@ -15,10 +15,10 @@ function navigation() {
     pageCreate.classList.add('hidden');
     pageProfile.classList.add('hidden');
 
-    buttonHome.classList.add('active');
-    buttonBookmarks.classList.remove('active');
-    buttonCreate.classList.remove('active');
-    buttonProfile.classList.remove('active');
+    buttonHome.classList.add('active', 'navigation__highlighted');
+    buttonBookmarks.classList.remove('active', 'navigation__highlighted');
+    buttonCreate.classList.remove('active', 'navigation__highlighted');
+    buttonProfile.classList.remove('active', 'navigation__highlighted');
   });
 
   buttonBookmarks.addEventListener('click', () => {
@@ -27,10 +27,10 @@ function navigation() {
     pageCreate.classList.add('hidden');
     pageProfile.classList.add('hidden');
 
-    buttonHome.classList.remove('active');
-    buttonBookmarks.classList.add('active');
-    buttonCreate.classList.remove('active');
-    buttonProfile.classList.remove('active');
+    buttonHome.classList.remove('active', 'navigation__highlighted');
+    buttonBookmarks.classList.add('active', 'navigation__highlighted');
+    buttonCreate.classList.remove('active', 'navigation__highlighted');
+    buttonProfile.classList.remove('active', 'navigation__highlighted');
   });
 
   buttonCreate.addEventListener('click', () => {
@@ -39,10 +39,10 @@ function navigation() {
     pageCreate.classList.remove('hidden');
     pageProfile.classList.add('hidden');
 
-    buttonHome.classList.remove('active');
-    buttonBookmarks.classList.remove('active');
-    buttonCreate.classList.add('active');
-    buttonProfile.classList.remove('active');
+    buttonHome.classList.remove('active', 'navigation__highlighted');
+    buttonBookmarks.classList.remove('active', 'navigation__highlighted');
+    buttonCreate.classList.add('active', 'navigation__highlighted');
+    buttonProfile.classList.remove('active', 'navigation__highlighted');
   });
 
   buttonProfile.addEventListener('click', () => {
@@ -51,10 +51,10 @@ function navigation() {
     pageCreate.classList.add('hidden');
     pageProfile.classList.remove('hidden');
 
-    buttonHome.classList.remove('active');
-    buttonBookmarks.classList.remove('active');
-    buttonCreate.classList.remove('active');
-    buttonProfile.classList.add('active');
+    buttonHome.classList.remove('active', 'navigation__highlighted');
+    buttonBookmarks.classList.remove('active', 'navigation__highlighted');
+    buttonCreate.classList.remove('active', 'navigation__highlighted');
+    buttonProfile.classList.add('active', 'navigation__highlighted');
   });
 }
 

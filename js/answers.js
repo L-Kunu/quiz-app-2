@@ -1,18 +1,18 @@
-function answers() {
-  const wrongAnswer = document.querySelectorAll('[data-js=incorrect]');
-  const correctAnswer = document.querySelector('[data-js="correct"]');
+function answer() {
+  const wrongAnswers = document.querySelectorAll('[data-answer=incorrect]');
+  const correctAnswers = document.querySelectorAll('[data-answer=correct]');
 
-  wrongAnswer.forEach(answer => {
+  wrongAnswers.forEach(answer => {
     answer.addEventListener('click', () => {
-      wrongAnswer.classList.add('card__answer-button--incorrect');
+      wrongAnswers.classList.add('card__answer-button--incorrect');
     });
   });
 
-  correctAnswer.forEach(answer => {
+  correctAnswers.forEach(answer => {
     answer.addEventListener('click', () => {
-      correctAnswer.classList.add('card__answer-button--correct');
+      correctAnswers.classList.add('card__answer-button--correct');
     });
   });
 }
 
-export default answers;
+export default answer;
